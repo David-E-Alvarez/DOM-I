@@ -131,6 +131,17 @@ for(var i = 0; i < getAtagNames.length; i++){
   getAtagNames[i].style.color = 'green';
 }
 
+//
+let aTag = document.createElement('a');
+let aTag2 = document.createElement('a');
+var aTagVar = aTag.textContent = 'Login';
+var aTagVar2 = aTag2.textContent = 'Sign Up';
+console.log("aTagVar: " + aTagVar);
+const parentElement = document.querySelector('nav');
+parentElement.appendChild(aTag2);
+parentElement.prepend(aTag);
+
+
 
 
 
