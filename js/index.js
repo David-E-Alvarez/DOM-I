@@ -140,6 +140,8 @@ console.log("aTagVar: " + aTagVar);
 const parentElement = document.querySelector('nav');
 parentElement.appendChild(aTag2);
 parentElement.prepend(aTag);
+aTag.style.color = 'green';
+aTag2.style.color = 'green';
 
 
 
