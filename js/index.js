@@ -46,3 +46,45 @@ logo2.setAttribute('src', siteContent["cta"]["img-src"])
 
 let logo3 = document.getElementById("middle-img");
 logo3.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+var getH1 = document.querySelector('h1');
+getH1.textContent = "DOM is Awesome";
+
+var getButton = document.querySelector('button');
+getButton.textContent = "Get Started";
+
+
+//nav bar
+var getAtagNames = document.querySelectorAll('a');
+getAtagNames[0].textContent = siteContent["nav"]["nav-item-1"];
+getAtagNames[1].textContent = siteContent["nav"]["nav-item-2"];
+getAtagNames[2].textContent = siteContent["nav"]["nav-item-3"];
+getAtagNames[3].textContent = siteContent["nav"]["nav-item-4"];
+getAtagNames[4].textContent = siteContent["nav"]["nav-item-5"];
+getAtagNames[5].textContent = siteContent["nav"]["nav-item-6"];
+
+//main-content/top-content
+const topContentChildren = document.querySelector('.top-content').children;
+console.log("topContentChildren: " + topContentChildren);
+
+//contact sandbox
+const whatIsContact = document.querySelector('.contact');
+//console.log("whatIsContact: " + whatIsContact);
+var contactChildren = document.querySelector('.contact').children;
+contactChildren[0].textContent = siteContent["contact"]["contact-h4"];
+contactChildren[1].textContent = siteContent["contact"]["address"];
+contactChildren[2].textContent = siteContent["contact"]["phone"];
+contactChildren[3].textContent = siteContent["contact"]["email"];
+
+//footer
+var footerVar = document.querySelector('footer p');
+//console.log("footerVar: " + footerVar);
+footerVar.textContent = siteContent["footer"]["copyright"];
+
+
+
+
+
+
+
+
