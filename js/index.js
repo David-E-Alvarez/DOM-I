@@ -64,8 +64,41 @@ getAtagNames[4].textContent = siteContent["nav"]["nav-item-5"];
 getAtagNames[5].textContent = siteContent["nav"]["nav-item-6"];
 
 //main-content/top-content
-const topContentChildren = document.querySelector('.top-content').children;
-console.log("topContentChildren: " + topContentChildren);
+const topContentH4Children = document.querySelectorAll('.top-content .text-content h4');
+console.log("topContentChildren: " + topContentH4Children);
+console.log("topContentChildren[0]: " + topContentH4Children[0]);
+console.log("topContentChildren[1]: " + topContentH4Children[1]);
+console.log(topContentH4Children.length);
+var featuresH4 = siteContent["main-content"]["features-h4"];
+topContentH4Children[0].textContent = featuresH4;
+var featuresContent = siteContent["main-content"]["about-h4"];
+topContentH4Children[1].textContent =  featuresContent;
+//main-content/top-content/p elements
+const topContentPChildren = document.querySelectorAll('.top-content .text-content p');
+var featuresP = siteContent["main-content"]["features-content"];
+topContentPChildren[0].textContent = featuresP;
+
+var pContent = siteContent["main-content"]["about-content"];
+topContentPChildren[1].textContent = pContent;
+
+
+
+
+
+
+
+
+
+
+
+// const topContentChildren = document.querySelector('.top-content .text-content').children;
+// console.log("topContentChildren[0]: " + topContentChildren[0]);
+// console.log("topContentChildren[1]: " + topContentChildren[1]);
+// console.log("topContentChildren.length: " + topContentChildren.length);
+
+
+
+
 
 //contact sandbox
 const whatIsContact = document.querySelector('.contact');
