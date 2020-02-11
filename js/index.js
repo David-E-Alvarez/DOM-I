@@ -65,10 +65,10 @@ getAtagNames[5].textContent = siteContent["nav"]["nav-item-6"];
 
 //main-content/top-content
 const topContentH4Children = document.querySelectorAll('.top-content .text-content h4');
-console.log("topContentChildren: " + topContentH4Children);
-console.log("topContentChildren[0]: " + topContentH4Children[0]);
-console.log("topContentChildren[1]: " + topContentH4Children[1]);
-console.log(topContentH4Children.length);
+//console.log("topContentChildren: " + topContentH4Children);
+//console.log("topContentChildren[0]: " + topContentH4Children[0]);
+//console.log("topContentChildren[1]: " + topContentH4Children[1]);
+//console.log(topContentH4Children.length);
 var featuresH4 = siteContent["main-content"]["features-h4"];
 topContentH4Children[0].textContent = featuresH4;
 var featuresContent = siteContent["main-content"]["about-h4"];
@@ -80,6 +80,33 @@ topContentPChildren[0].textContent = featuresP;
 
 var pContent = siteContent["main-content"]["about-content"];
 topContentPChildren[1].textContent = pContent;
+
+//bottom-content for h4's
+const bottomContentH4Children = document.querySelectorAll('.bottom-content .text-content h4');
+//console.log("bottomContentH4Children: " + bottomContentH4Children);
+//console.log("bottomContentH4Children.length: " + bottomContentH4Children.length);
+//h4's
+var firstBottomH4 = siteContent["main-content"]["services-h4"];
+bottomContentH4Children[0].textContent = firstBottomH4;
+
+var secondBottomH4 = siteContent["main-content"]["product-h4"];
+bottomContentH4Children[1].textContent = secondBottomH4;
+
+var thirdBottomh4 = siteContent["main-content"]["vision-h4"];
+bottomContentH4Children[2].textContent = thirdBottomh4;
+
+//p's
+const bottomContentPChildren = document.querySelectorAll('.bottom-content .text-content p');
+//console.log("bottomContentPChildren.length: " + bottomContentPChildren.length);
+var firstBottomP = siteContent["main-content"]["services-content"];
+bottomContentPChildren[0].textContent = firstBottomP;
+
+var secondBottomP = siteContent["main-content"]["product-content"];
+bottomContentPChildren[1].textContent = secondBottomP;
+
+var thirdBottomP = siteContent["main-content"]["vision-content"];
+bottomContentPChildren[2].textContent = thirdBottomP;
+
 
 
 
