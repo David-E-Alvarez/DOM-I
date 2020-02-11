@@ -107,26 +107,6 @@ bottomContentPChildren[1].textContent = secondBottomP;
 var thirdBottomP = siteContent["main-content"]["vision-content"];
 bottomContentPChildren[2].textContent = thirdBottomP;
 
-
-
-
-
-
-
-
-
-
-
-
-// const topContentChildren = document.querySelector('.top-content .text-content').children;
-// console.log("topContentChildren[0]: " + topContentChildren[0]);
-// console.log("topContentChildren[1]: " + topContentChildren[1]);
-// console.log("topContentChildren.length: " + topContentChildren.length);
-
-
-
-
-
 //contact sandbox
 const whatIsContact = document.querySelector('.contact');
 //console.log("whatIsContact: " + whatIsContact);
@@ -143,7 +123,13 @@ footerVar.textContent = siteContent["footer"]["copyright"];
 
 
 
-
+//make navigation text green
+var getAtagNames = document.querySelectorAll('a');
+getAtagNames[0].textContent = siteContent["nav"]["nav-item-1"];
+console.log("getAtagNames: " + getAtagNames);
+for(var i = 0; i < getAtagNames.length; i++){
+  getAtagNames[i].style.color = 'green';
+}
 
 
 
