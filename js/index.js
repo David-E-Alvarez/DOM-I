@@ -56,12 +56,20 @@ getButton.textContent = "Get Started";
 
 //nav bar
 var getAtagNames = document.querySelectorAll('a');
-getAtagNames[0].textContent = siteContent["nav"]["nav-item-1"];
-getAtagNames[1].textContent = siteContent["nav"]["nav-item-2"];
-getAtagNames[2].textContent = siteContent["nav"]["nav-item-3"];
-getAtagNames[3].textContent = siteContent["nav"]["nav-item-4"];
-getAtagNames[4].textContent = siteContent["nav"]["nav-item-5"];
-getAtagNames[5].textContent = siteContent["nav"]["nav-item-6"];
+// getAtagNames[0].textContent = siteContent["nav"]["nav-item-1"];
+// getAtagNames[1].textContent = siteContent["nav"]["nav-item-2"];
+// getAtagNames[2].textContent = siteContent["nav"]["nav-item-3"];
+// getAtagNames[3].textContent = siteContent["nav"]["nav-item-4"];
+// getAtagNames[4].textContent = siteContent["nav"]["nav-item-5"];
+// getAtagNames[5].textContent = siteContent["nav"]["nav-item-6"];
+
+var counter = 0;
+getAtagNames.forEach(item => {
+  console.log("counter: " + counter);
+  getAtagNames[counter].textContent = siteContent["nav"][`nav-item-${counter + 1}`];
+  counter = counter + 1;
+})
+
 
 //main-content/top-content
 const topContentH4Children = document.querySelectorAll('.top-content .text-content h4');
